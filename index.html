@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Krishav Singh</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* kills scroll */
+      font-family: Arial, Helvetica, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    body {
+      display: flex;
+    }
+
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      padding: 40px;
+    }
+
+    .image-container {
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 3 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block; /* removes img inline gap */
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      letter-spacing: 4px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <div class="image-container">
+      <img src="photo.png" alt="Krishav Singh">
+    </div>
+  </div>
+
+  <div class="right">
+    KRISHAV SINGH.
+  </div>
+</body>
+</html>
